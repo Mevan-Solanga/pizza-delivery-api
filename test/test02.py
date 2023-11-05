@@ -2,16 +2,16 @@ import requests
 import json
 from flask import jsonify
 
-url='http://127.0.0.1:8000/pizza-delivery-api/order/4f064844-b7df-4f3e-880a-3252e719d151'
+url='http://127.0.0.1:8000/pizza-delivery-api/order/025f3b9d-ffc3-41f8-9b2a-21d0007d9266'
 data = {
-    "order_status" : "In Kitchen",
-    "pizza_size" : 'L',
+    "order_status" : "Prepared",
+    "pizza_size" : 'XXXS',
     "pizza_type" : None
 }
 
 json_data = json.dumps(data)
 headers = {'Content-Type': 'application/json'}
-response = requests.put(url, data=json_data, headers=headers)
+response = requests.post(url, data=json_data, headers=headers)
 
 response_data = response.json()
 with open("retrieve_order_response.json", "w") as json_file:

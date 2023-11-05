@@ -1,9 +1,9 @@
 {
     "data": {
-        "order_id": "4f064844-b7df-4f3e-880a-3252e719d151",
-        "user_name": "Savyo",
-        "pizza_type": "Pepperoni",
-        "pizza_size": "L",
-        "order_status": "In Kitchen"
+        "order_id": "025f3b9d-ffc3-41f8-9b2a-21d0007d9266",
+        "user_name": "Ammar Shiraz",
+        "pizza_type": "Chicken",
+        "pizza_size": "XXXS",
+        "order_status": "Prepared"
     }
 }

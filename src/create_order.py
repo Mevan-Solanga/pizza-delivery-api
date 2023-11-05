@@ -21,7 +21,7 @@ class CreateOrder(Resource):
             }, 400
             return message
         try:
-            order_status = "In Progress" 
+            order_status = "Order Received" 
             user = OrderDatabase(
                 order_id = order_id,
                 user_name = user_name,

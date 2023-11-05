@@ -8,6 +8,7 @@ import uuid
 from database import OrderDatabase, db
 from create_order import CreateOrder
 from retrieve_order import RetrieveOrder
+from search_order import SearchOrder
 import os
 
 # api configuration
@@ -20,6 +21,7 @@ db.init_app(app)
 # Declaring the API endpoints
 api.add_resource(RetrieveOrder,"/pizza-delivery-api/order/<string:order_id>")
 api.add_resource(CreateOrder,"/pizza-delivery-api/order/")
+api.add_resource(SearchOrder,"/pizza-delivery-api/order/search")
 
 if __name__ == '__main__':
     with app.app_context():
