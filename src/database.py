@@ -17,3 +17,4 @@ class OrderDatabase(db.Model):
     pizza_type : Mapped[str] = mapped_column(String, nullable=False)
     pizza_size : Mapped[str] = mapped_column(String, nullable=False)
     phone_number : Mapped[int] = mapped_column(Integer, nullable=False)
+    order_status : Mapped[str] = mapped_column(String, nullable=False)

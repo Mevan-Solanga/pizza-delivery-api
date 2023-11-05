@@ -8,11 +8,13 @@ import uuid
 from database import OrderDatabase, db
 from create_order import CreateOrder
 from retrieve_order import RetrieveOrder
+import os
 
-#api configuration
+# api configuration
+database_folder = os.path.abspath("database")
 app=Flask(__name__)
 api=Api(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///project.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(database_folder, 'order_data.db')}"
 db.init_app(app)
 
 # Declaring the API endpoints
