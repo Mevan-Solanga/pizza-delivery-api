@@ -10,7 +10,6 @@ This is a simple Pizza Delivery API built using Flask, Flask-RESTful, and Flask-
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Project Structure](#project-structure)
-- [License](#license)
 
 ## Features
 
@@ -28,3 +27,51 @@ Before you begin, ensure you have met the following requirements:
 - pip package manager installed.
 - Git (optional) for version control.
 
+## Installation
+
+1. Clone this repository to your local machine (or download the ZIP file).
+
+   ```bash
+   git clone https://github.com/yourusername/pizza-delivery-api.git
+
+   Change into the project directory:
+
+2. Change into the project directory:
+   cd pizza-delivery-api
+   
+3. Create a virtual environment (recommended) and activate it:
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use venv\Scripts\activate
+
+4. Install the required Python packages:
+   pip install -r requirements.txt
+   
+## Usage
+
+-Start the Flask development server:
+ python app.py
+-Access the API in your web browser or using a tool like curl or Postman.
+-Use the available API endpoints to create, retrieve, update, and search for pizza delivery orders.
+
+## API Endpoints
+Retrieve Order:
+
+GET /pizza-delivery-api/order/<order_id>: Retrieve a pizza delivery order by its order ID.
+Create Order:
+
+POST /pizza-delivery-api/order/: Create a new pizza delivery order by providing order details in the request body.
+Search Orders:
+
+GET /pizza-delivery-api/search_order/?user_name=<user_name>&pizza_type=<pizza_type>&pizza_size=<pizza_size>: Search for pizza delivery orders based on user name, pizza type, and pizza size.
+Update Order:
+
+POST /pizza-delivery-api/order/<order_id>: Update an existing pizza delivery order by providing updated order details in the request body.
+
+## Project Structure
+The project structure is organized as follows:
+
+app.py: The main application file.
+models.py: Defines the database model for pizza orders.
+resources.py: Contains the API resources for creating, retrieving, searching, and updating orders.
+database.py: Initializes and configures the SQLAlchemy database.
+requirements.txt: Lists the required Python packages.
