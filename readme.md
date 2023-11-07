@@ -9,7 +9,6 @@ This is a simple Pizza Delivery API built using Flask, Flask-RESTful, and Flask-
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Project Structure](#project-structure)
 
 ## Features
 
@@ -43,9 +42,6 @@ Before you begin, ensure you have met the following requirements:
    python -m venv venv
    source venv/bin/activate  # On Windows, use venv\Scripts\activate
 
-4. Install the required Python packages:
-   pip install -r requirements.txt
-   
 ## Usage
 
 -Start the Flask development server:
@@ -63,11 +59,3 @@ POST /pizza-delivery-api/order/: Create a new pizza delivery order by providing 
 Search Orders:
 GET /pizza-delivery-api/order/search: Search for pizza delivery orders based on user name, pizza type, and pizza size.
 
-## Project Structure
-The project structure is organized as follows:
-
-app.py: The main application file.
-models.py: Defines the database model for pizza orders.
-resources.py: Contains the API resources for creating, retrieving, searching, and updating orders.
-database.py: Initializes and configures the SQLAlchemy database.
-requirements.txt: Lists the required Python packages.
