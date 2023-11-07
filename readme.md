@@ -55,17 +55,13 @@ Before you begin, ensure you have met the following requirements:
 
 ## API Endpoints
 Retrieve Order:
-
 GET /pizza-delivery-api/order/<order_id>: Retrieve a pizza delivery order by its order ID.
+
 Create Order:
-
 POST /pizza-delivery-api/order/: Create a new pizza delivery order by providing order details in the request body.
+
 Search Orders:
-
-GET /pizza-delivery-api/search_order/?user_name=<user_name>&pizza_type=<pizza_type>&pizza_size=<pizza_size>: Search for pizza delivery orders based on user name, pizza type, and pizza size.
-Update Order:
-
-POST /pizza-delivery-api/order/<order_id>: Update an existing pizza delivery order by providing updated order details in the request body.
+GET /pizza-delivery-api/order/search: Search for pizza delivery orders based on user name, pizza type, and pizza size.
 
 ## Project Structure
 The project structure is organized as follows:
